@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="styleSheet_1.css">
+	<link rel="stylesheet" type="text/css" href="styleSheet_2.css">
+	<title>Recipe viewer</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<div class="logo-icon"><img src="assets/logo-img.png" alt="logo"></div>
+			<span>food<i>iz</i></span>
+		</div>
+		
+		<div class="menuToggle"> <!-- activates in responive section -->
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>  <!-- end -->
+		
+		<nav>
+			<ul>
+				<li class="tabs active"><a href="#home">Home</a></li>
+				<li class="tabs"><a href="#search">Search</a></li>
+				<li class="tabs"><a href="#about">About</a></li>
+				<div class="indicator"></div>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- home section -->
+	<section id="home">
+		<div class="text-section">
+			<div class="text-body">
+				<h4>Hey there...</h4>
+				<h1>Wanna have some <span id="changing-text"></span></h1>
+				<p>Presenting you the complete and wide range of food recipes to try them at your needs and
+				   sharing them with all your near and dear ones. So what's wait for?  just dive into the free website of
+				   a large variety of meal recipes by searching them from below. Try the cool stuffs, make others happy by serving them...happy life!!
+				</p>
+
+			</div>
+			<button><a href="#search">See more</a></button>
+		</div>
+	</section>
+
+	<!-- search section starts -->
+	<section id="search" style="--bgClr:#2d5986;">
+			<div class="search-bar">
+				<div class="search-box">
+					<ion-icon name="search-outline"></ion-icon>
+					<input type="text" id="search-food" placeholder="Enter a food name">
+				</div>
+				<button id="searchBtn"><b>Search</b></button>
+			</div>
+			<div class="wrapper">
+				<div class="loader">
+					<img src="assets/search-request-default.gif" alt="searchGif">
+				</div>
+				<div class="errorResult"></div>
+				
+				<!-- container to store all the recipe cards -->
+				<div class="recipe-container"></div>
+				
+				<!-- popup box to show recipe details -->
+				<div class="popupBox">
+					<div class="closeBtn">
+						<ion-icon name="close-outline"></ion-icon>
+					</div>
+					<div class="popup-contents">
+						
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- about section starts -->
+	<section id="about" style="--bgClr:#4d0026;">
+		<div class="about-container">
+			<div class="details">
+				<p>This web application is an API-based app made for entertainment purposes only. It is a custom food-related application and made in 
+					assosciation with <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a>, an online platform providing with a wide range 
+					of both free and paid meal recipes. Follow us up for more interesting stuffs and web-applications, reach us 
+					through the links below and support us in making more interesting prjects by signing up in our patreon page. References and data are 
+					constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using foodz, you agree to have read 
+					and accepted our terms of use, cookie and privacy policy.
+				</p>
+			</div>
+			<div class="details">
+				<h4>contact us</h4>
+				<ul class="sc-media-icons">
+					<li><a href="https://m.facebook.com/snehodipto.das.37" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/snehodipto0714" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="https://github.com/CrossOriGenes" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+					<li><a href="https://discord.com/channels/snehodipto#6725" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+					<li><a href="mailto:dsnehodipto@gmail.com" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="misc">
+			<span><a href="" target="_blank">Privacy Policy</a><b>|</b><a href="" target="_blank">Terms and conditions</a></span>
+			<p> &#169; 2023 created with <i class="fa-solid fa-heart"></i>care by CrossOriGenes. All rights reserved. </p>
+			<div class="brand-logo">
+				<img src="assets/my-brand-logo.png" alt="myBrand">
+			</div>
+		</div>
+	</footer>
+		
+
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script src="app.js"></script>
+</body>
+</html>
